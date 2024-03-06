@@ -1,6 +1,6 @@
 package org.example.task2;
 
-public class NamoProjektas {
+public class NamoProjektas implements Funkcijos{
     private int statybosMetai;
     private String energingumoKlase;
     private String adresas;
@@ -10,7 +10,15 @@ public class NamoProjektas {
         this.energingumoKlase = energingumoKlase;
         this.adresas = adresas;
     }
-    public void piesti(){
-        System.out.printf("Piešti: %s", getClass().getName());
+
+    @Override
+    public String toString() {
+        return "statybosMetai=" + statybosMetai +
+                ", energingumoKlase='" + energingumoKlase + '\'' +
+                ", adresas='" + adresas + '\'';
+    }
+
+    public void piesti() {
+        System.out.println("Piešti namo projektą");
     }
 }

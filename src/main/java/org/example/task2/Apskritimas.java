@@ -1,6 +1,6 @@
 package org.example.task2;
 
-public class Apskritimas extends Figura implements Plotas{
+public class Apskritimas extends Figura implements Funkcijos {
     private double spindulys;
 
     public Apskritimas(String spalva, boolean uzpildyta, double spindulys) {
@@ -11,14 +11,14 @@ public class Apskritimas extends Figura implements Plotas{
     @Override
     public double apskaiciuotiPlota() {
         if (isUzpildyta()) {
-            return Math.PI*spindulys*spindulys;
-        }else{
+            return Math.PI * spindulys * spindulys;
+        } else {
             return 0;
         }
     }
 
-    public void piesti(){
-        System.out.printf("Piešti: %s", getClass().getName());
+    public void piesti() {
+        System.out.println("Piešti apskritimą");
     }
 
 }

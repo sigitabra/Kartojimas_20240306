@@ -1,6 +1,6 @@
 package org.example.task2;
 
-public class Staciakampis extends Figura implements Plotas {
+public class Staciakampis extends Figura implements Funkcijos {
     private final double ilgis;
     private final double plotis;
 
@@ -14,13 +14,13 @@ public class Staciakampis extends Figura implements Plotas {
     public double apskaiciuotiPlota() {
         if (isUzpildyta()) {
             return ilgis * plotis;
-        }else{
+        } else {
             return 0;
         }
     }
 
-    public void piesti(){
-        System.out.printf("Piešti: %s", getClass().getName());
+    public void piesti() {
+        System.out.println("Piešti stačiakampį");
     }
 
 }

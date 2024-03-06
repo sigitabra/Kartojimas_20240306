@@ -1,12 +1,20 @@
 package org.example.task2;
 
-abstract class Figura {
+public abstract class Figura {
     private String spalva;
     private boolean uzpildyta;
 
     protected Figura(String spalva, boolean uzpildyta) {
         this.spalva = spalva;
         this.uzpildyta = uzpildyta;
+    }
+
+    abstract double apskaiciuotiPlota();
+
+    @Override
+    public String toString() {
+        return "spalva='" + spalva + '\'' +
+                ", uzpildyta=" + uzpildyta;
     }
 
     public String getSpalva() {

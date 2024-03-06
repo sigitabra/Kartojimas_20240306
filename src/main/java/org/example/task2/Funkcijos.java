@@ -1,5 +1,6 @@
 package org.example.task2;
 
-abstract class Funkcijos {
+public interface Funkcijos {
+    public void piesti();
 
 }
