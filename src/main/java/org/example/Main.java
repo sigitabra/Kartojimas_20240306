@@ -18,15 +18,15 @@ public class Main {
         Staciakampis st = new Staciakampis("Juoda", true, 12.56d, 13.45d);
         NamoProjektas namas = new NamoProjektas(2000, "A1", "Vasaros g. 5, Vilnius");
 
-        bendriFiguruLaukai(ap);
-        bendriFiguruLaukai(st);
-
+        bendriLaukai(ap);
+        bendriLaukai(st);
+        bendriLaukai(namas);
         bendraFunkcija(ap);
         bendraFunkcija(st);
         bendraFunkcija(namas);
     }
 
-    public static <T> void bendriFiguruLaukai(T object) {
+    public static <T> void bendriLaukai(T object) {
         System.out.println(object);
     }
 
